@@ -6,10 +6,14 @@ import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
 
 window.onload = function() {
-  //write your code here
-  const div = document.querySelector("#specialdiv");
-  div = "new text abc";
-  document.getElementById('specialdiv').innerText = 'New text';
+  const div = document.querySelector("#card");
 
-  console.log("Hello Rigo from the console!");
+  const randomDec = Math.random();
+  
+  const randomLongNum = random * 5;
+
+  const randomNumNoDec = Math.floor(randomLongNum);
+  //removed decimals
+
+  div.innerHTML = randomNumNoDec;
 };
