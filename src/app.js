@@ -17,7 +17,7 @@ window.onload = function() {
 const drawCard = ()=> {
   console.log("user clicked draw card button");
 
-  const valueDiv = document.querySelector("#card"); // number or letter on card
+  const valueDiv = document.querySelector("#value"); // number or letter on card
   const suitDiv = document.querySelector("#suit");
 
   const valueArray = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
