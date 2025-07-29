@@ -4,11 +4,12 @@ body{
     background: white;
     color: black;
     div.card{
-        width: 2.6in;
-        height: 3.85in;
+        width: 2.55in;
+        height: 3.7in;
         border-style: solid;
+        border-radius: 15px;
         display: flex;
-        align-items: cneter;
+        align-items: center;
         justify-content: center; 
     }
     div.card img{
@@ -17,6 +18,8 @@ body{
         width: 3.5in; /* apparent HEIGHT because image is rotated 90deg */
         object-fit: contain;
         border-style: solid;
+        border-radius: 7px;
+        border-color: #0A8A9C;
         /* padding: 2px; */
     }
 }
