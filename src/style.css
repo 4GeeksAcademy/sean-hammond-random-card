@@ -3,4 +3,9 @@
 body{
     background: white;
     color: black;
+    div img {
+        rotate: 90deg;
+    }
 }
+
+
