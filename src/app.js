@@ -7,18 +7,21 @@ import "./assets/img/4geeks.ico";
 import { Button } from "bootstrap";
 
 window.onload = function() {
-    const drawArea = document.querySelector("#drawButton");
+  const drawArea = document.querySelector("#drawButton");
   drawArea.addEventListener("click", drawCard);
-  // suitDivDiv.addEventListener("mouseout", ()=> div.style.color = "green");
+  
+  
 
-  
-  
-  console.log("beginning of code");
-  const valueDiv = document.querySelector("#card"); // number on face of card
+};
+
+const drawCard = ()=> {
+  console.log("user clicked draw card button");
+
+  const valueDiv = document.querySelector("#card"); // number or letter on card
   const suitDiv = document.querySelector("#suit");
 
   const valueArray = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
-  const suitArray = ["heart❤︎", "spade♠️", "club♣️", "diamond◆"];
+  const suitArray = ["❤︎", "♠️", "♣️", "◆"];
 
   const randomDecForValue = Math.random();
   const randomDecForSuit = Math.random();
@@ -32,10 +35,4 @@ window.onload = function() {
 
   valueDiv.innerHTML = valueArray[randomNumNoDecValue];
   suitDiv.innerHTML = suitArray[randomNumNoDecSuit];
-
-};
-
-const drawCard = ()=> {
-  
-  console.log("user clicked draw card button");
 };
