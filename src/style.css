@@ -1,7 +1,7 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: white;
+    background: rgb(15, 300, 250);
     color: black;
     div.card{
         width: 2.55in;
@@ -14,8 +14,8 @@ body{
     }
     div.card img{
         rotate: 90deg;
-        height: 2.35in; /* apparent WIDTH because image is rotated 90deg */
-        width: 3.5in; /* apparent HEIGHT because image is rotated 90deg */
+        height: 2.35in; /* apparent WIDTH when image is rotated 90deg */
+        width: 3.5in; /* apparent HEIGHT when image is rotated 90deg */
         object-fit: contain;
         border-style: solid;
         border-radius: 7px;

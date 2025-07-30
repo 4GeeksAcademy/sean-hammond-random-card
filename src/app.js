@@ -4,6 +4,7 @@ import "./style.css";
 
 import "./assets/img/rigo-baby.jpg";
 import "./assets/img/4geeks.ico";
+// import "./assets/imgplaying-card-568201_640.jpg"
 import { Button } from "bootstrap";
 
 window.onload = function() {
