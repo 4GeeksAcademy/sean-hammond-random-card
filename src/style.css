@@ -1,9 +1,7 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    /* background: rgb(200, 165, 165); */
-    /* background: rgb(206, 86, 50); */
-    background: rgb(203, 126, 108);
+    /* background: green; */
     color: black;
 }
 

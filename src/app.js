@@ -10,7 +10,7 @@ import { Button } from "bootstrap";
 window.onload = function() {
   // Variables
   const valueArray = ["A", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"];
-  const suitArray = ["❤︎", "♠️", "♣️", "◆"];
+  const suitArray = ["♥", "♠", "♣", "♦"];
   const value = document.querySelectorAll(".value"); // number or letter on card
   const suit = document.querySelectorAll(".suit");
   
@@ -25,16 +25,23 @@ window.onload = function() {
     const randomValue = randomIndex(valueArray);
     const randomSuit = randomIndex(suitArray);
 
-    // Change printed value/suit
+    // Change printed value/suit everywhere
     value.forEach(valueText => {
         valueText.textContent = valueArray[randomValue];
     });
     suit.forEach(suitText => {
         suitText.textContent = suitArray[randomSuit];
+        if (suit == "♥" || suit == "♦") {
+          console.log("suitText is a heart or diamond");
+          suit.style.color = "red";
+        }
     });
     
   };
   
   const drawBtn = document.querySelector("#drawBtn");
   drawBtn.addEventListener("click", drawCard);
+  drawBtn.style.backgroundColor = "salmon";
 };
+
+// suitText.style.color
