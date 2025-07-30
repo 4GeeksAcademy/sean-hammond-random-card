@@ -1,27 +1,30 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
-    background: rgb(15, 300, 250);
+    /* background: rgb(200, 165, 165); */
+    /* background: rgb(206, 86, 50); */
+    background: rgb(203, 126, 108);
     color: black;
-    div.card{
+}
+
+div.card{
         width: 2.55in;
         height: 3.7in;
         border-style: solid;
         border-radius: 15px;
         display: flex;
         align-items: center;
-        justify-content: center; 
+        justify-content: center;
     }
-    div.card img{
-        rotate: 90deg;
-        height: 2.35in; /* apparent WIDTH when image is rotated 90deg */
-        width: 3.5in; /* apparent HEIGHT when image is rotated 90deg */
-        object-fit: contain;
-        border-style: solid;
-        border-radius: 7px;
-        border-color: #0A8A9C;
-        /* padding: 2px; */
-    }
+div.card img{
+    rotate: 90deg;
+    height: 2.35in; /* apparent WIDTH when image is rotated 90deg */
+    width: 3.5in; /* apparent HEIGHT when image is rotated 90deg */
+    object-fit: contain;
+    border-style: solid;
+    border-radius: 7px;
+    border-color: #0A8A9C;
+    /* padding: 2px; */
 }
 
 
