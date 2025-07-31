@@ -28,12 +28,20 @@ window.onload = function() {
     // Change printed value/suit everywhere
     value.forEach(valueText => {
         valueText.textContent = valueArray[randomValue];
+        if(suitArray[randomSuit] == "♦" || suitArray[randomSuit] == "♥") {
+          valueText.style.color = "red";
+        } else if(suitArray[randomSuit] == "♠" || suitArray[randomSuit] == "♣") {
+          valueText.style.color = "black";
+        }
     });
     suit.forEach(suitText => {
         suitText.textContent = suitArray[randomSuit];
-        if (suit == "♥" || suit == "♦") {
-          console.log("suitText is a heart or diamond");
-          suit.style.color = "red";
+        if(suitArray[randomSuit] == "♦" || suitArray[randomSuit] == "♥") {
+          console.log("suitText is a diamond or heart");
+          suitText.style.color = "red";
+        } else if(suitArray[randomSuit] == "♠" || suitArray[randomSuit] == "♣") {
+          console.log("suitText is a spade or club");
+          suitText.style.color = "black";
         }
     });
     
@@ -44,4 +52,9 @@ window.onload = function() {
   drawBtn.style.backgroundColor = "salmon";
 };
 
-// suitText.style.color
+//   suit.style.color = "red";
+// suitArray[randomSuit] == "♥"|| 
+// if(suitArray[randomSuit] == "♠" || suitArray[randomSuit] == "♣") {
+//           console.log("suitText is a spade or club");
+//           suitText.style.color = "red";
+//         }
