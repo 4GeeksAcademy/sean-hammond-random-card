@@ -60,10 +60,3 @@ window.onload = function() {
   drawBtn.addEventListener("mouseover", highlightCard);
   drawBtn.addEventListener("mouseout", unHighlightCard);
 };
-
-//   suit.style.color = "red";
-// suitArray[randomSuit] == "♥"|| 
-// if(suitArray[randomSuit] == "♠" || suitArray[randomSuit] == "♣") {
-//           console.log("suitText is a spade or club");
-//           suitText.style.color = "red";
-//         }
