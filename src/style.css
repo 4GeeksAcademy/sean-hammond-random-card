@@ -6,23 +6,30 @@ body{
     padding: 50px;
 }
 
+body>h1 {
+    color: cornsilk;
+    font-weight: bold;
+    text-align: center;
+    transform: rotate(-2deg);
+}
+
 .cardsContainer {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
 div.card{
-        width: 2.55in;
-        min-width: 2.55in;
-        height: 3.7in;
-        border-style: solid;
-        border-radius: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-    }
+    width: 2.55in;
+    min-width: 2.55in;
+    height: 3.7in;
+    border-style: solid;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 
 div.card img{
     rotate: 90deg;
@@ -59,6 +66,7 @@ div.card>h1 {
 
 p {
     color: cornsilk;
+    font-size: 1rem;
 }
 
 p:first-of-type {

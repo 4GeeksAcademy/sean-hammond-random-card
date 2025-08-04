@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
+    <link rel="icon" href="./assets/img/ace-of-spades.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random Card</title>
+    <title>Random Card Generator</title>
 
     <!-- Fontawesome is our recomended library for icons -->
     <link
@@ -15,8 +15,10 @@
     />
   </head>
   <body>
+    <h1>Random Card Generator!</h1>
+
     <div class="cardsContainer">
-      <div class="card" id="drawBtn"><img src="assets/img/playing-card-568201_640.jpg" alt="bluish green playing card back geometric pattern"></div>
+      <div class="card" id="drawBtn"><img src="assets/img/playing-card.jpg" alt="bluish green playing card back geometric pattern"></div>
       <div class="card">
         <div class="cardCornerTop"><h1 class="value">A</h1><h1 class="suit">♠</h1></div>
         <h1 class="value">A</h1>
@@ -26,8 +28,10 @@
     
     <br><p>Click the card pile (face down) to draw a new random card!</p>
 
-    <br><p>Simple on the outside, complicated on the inside. This is my attempt at making a random card genrator using DOM manipulation, if statements, and the forEach method.</p><br>
-    <p>Not the most efficient way, but this is how the lesson was taught. Coming up, we will learn React and make things a lot easier! Anyway, it was a fun challenge.</p>
+    <br><p>Simple on the outside, complicated on the inside! This is my attempt at making a random card genrator the hard way, using DOM manipulation, if statements, the forEach method, and event listeners.</p><br>
+    <p>A simpler method would use HTML onclick, and CSS :hover for the mouseover. However, I followed the lesson as taught for a fun challenge. In upcoming projects, I will use React and make things a lot easier!</p>
+
+    <br><p>Here is a video where I explain some of the process and code:</p>
 
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
     <script type="module" src="/app.js"></script>
