@@ -46,10 +46,19 @@ window.onload = function() {
     });
     
   };
+
+  // Border around card back changes when hovered over
+  const highlightCard = ()=> {
+    drawBtn.style.backgroundColor = "salmon";
+  }
+  const unHighlightCard = ()=> {
+    drawBtn.style.backgroundColor = "white";
+  }
   
   const drawBtn = document.querySelector("#drawBtn");
   drawBtn.addEventListener("click", drawCard);
-  drawBtn.style.backgroundColor = "salmon";
+  drawBtn.addEventListener("mouseover", highlightCard);
+  drawBtn.addEventListener("mouseout", unHighlightCard);
 };
 
 //   suit.style.color = "red";
